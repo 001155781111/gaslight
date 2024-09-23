@@ -1,0 +1,264 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+    <head><link rel="shortcut icon" href="../oxygen-webhelp\template\resources/favicon.ico"><!----></link><link rel="icon" href="../oxygen-webhelp\template\resources/favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2024"/><meta name="copyright" content="(C) Copyright 2024"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="reference"/><meta name="description" content="Scope Name Sample Data Use openid id_token User authentication oauth2_tokens &#34;oauth&#34;: [     {       &#34;access_token&#34;: &#34;ya29.a0AfH6S”       &#34;provider&#34;: &#34;google&#34;,       &#34;subject&#34;: &#34;104241676902092822009&#34;, ..."/><meta name="DC.relation" scheme="URI" content="../openID/c_con_openid_implementation.html"/><meta name="DC.contributor" content="cpirpiris"/><meta name="DC.date.modified" content="2024-07-12"/><meta name="DC.date.modified" content="2024-07-15"/><meta name="DC.date.modified" content="2024-07-22"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="reference_jfs_frm_hwb"/>        
+      <title>Scopes</title><!--  Generated with Oxygen version 23.1, build number 2021121413.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="reference_jfs_frm_hwb-d1107e1577"/><meta name="wh-source-relpath" content="openID/r_con_openid-scopes.dita"/><meta name="wh-out-relpath" content="openID/r_con_openid-scopes.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2021121413"/>
+    
+    
+    <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/resources/oxygen-gray.css?buildId=2021121413"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/resources/notes.css?buildId=2021121413"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/resources/connect.css?buildId=2021121413"/></head>
+
+    <body id="reference_jfs_frm_hwb" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="https://support.scienceconnect.io/" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp\template\resources/connect_logo.svg" alt="CONNECT Dashboard"/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">CONNECT Dashboard</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <!-- Search form -->
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search the knowledge base&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;             " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search the knowledge base&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;            "><span class="search_input_text">Search the knowledge base
+				
+            </span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="concept_j4k_q2g_fwb"><span class="title"><a href="../openID/c_con_openid_implementation.html" aria-current="page">OpenID Implementation</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This document contains technical information for publishers and integrators about         OpenID Connect (OIDC) protocol.</p></span></span></span></li><li class="active"><span class="topicref" data-id="reference_jfs_frm_hwb"><span class="title"><a href="../openID/r_con_openid-scopes.html" aria-current="page">Scopes</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        
+                        <!-- External resource link -->
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        
+                        <nav id="wh_publication_toc" class="collapse col-lg-3 col-md-3 col-sm-12 d-md-block d-print-none" aria-label="Table of Contents Container">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="concept_j4k_q2g_fwb-d1107e1056" class="topicref" data-id="concept_j4k_q2g_fwb" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action concept_j4k_q2g_fwb-d1107e1056-link" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_implementation.html" id="concept_j4k_q2g_fwb-d1107e1056-link">OpenID Implementation</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This document contains technical information for publishers and integrators about         OpenID Connect (OIDC) protocol.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><span data-tocid="concept_nv5_wgg_fwb-d1107e1077" class="topicref" data-id="concept_nv5_wgg_fwb" data-state="leaf"><span role="button" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_connect-overview.html" id="concept_nv5_wgg_fwb-d1107e1077-link">Overview of CONNECT</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">CONNECT is an Identity Management as a Service (IDaaS) platform created and managed         by Wiley Partner Solutions that enables publishers to securely sign in users to their         applications, using the OpenID Connect (OIDC) protocol.</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="concept_x4t_f4g_fwb-d1107e1098" class="topicref" data-id="concept_x4t_f4g_fwb" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action concept_x4t_f4g_fwb-d1107e1098-link" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_overview.html" id="concept_x4t_f4g_fwb-d1107e1098-link">Overview of OpenID CONNECT</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The OpenID Connect (OIDC) protocol is an extension of OAuth 2.0 for use as an         authentication protocol.</p></span></span></span></li><li role="treeitem"><span data-tocid="concept_tfz_spg_fwb-d1107e1140" class="topicref" data-id="concept_tfz_spg_fwb" data-state="leaf"><span role="button" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_client-application-configuration.html" id="concept_tfz_spg_fwb-d1107e1140-link">Client Application Configuration</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">A client application represents an application (typically a web application) of a         publisher that provides services to authenticated users. Each application always belongs to         one CONNECT tenant (customer). Each customer can have multiple applications.</p></span></span></span></li><li role="treeitem"><span data-tocid="concept_iyx_jb4_fwb-d1107e1161" class="topicref" data-id="concept_iyx_jb4_fwb" data-state="leaf"><span role="button" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_metadata-document.html" id="concept_iyx_jb4_fwb-d1107e1161-link">Metadata Document</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The OpenID Connect service is a metadata document that contains most of the         information required for a client application to perform the authorization flow. This         includes information such as the URLs to use and the location of the service's public         signing keys. </p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="concept_v2d_dt4_fwb-d1107e1182" class="topicref" data-id="concept_v2d_dt4_fwb" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action concept_v2d_dt4_fwb-d1107e1182-link" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_authorization-request.html" id="concept_v2d_dt4_fwb-d1107e1182-link">The Authorization Request</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">When a web application needs to authenticate a user, it must direct the browser to         the URL of the authorization_endpoint, specified in the application metadata. This request         is also referred to as the authorization request.</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="concept_ljx_31s_gwb-d1107e1287" class="topicref" data-id="concept_ljx_31s_gwb" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action concept_ljx_31s_gwb-d1107e1287-link" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_id-token.html" id="concept_ljx_31s_gwb-d1107e1287-link">The id_token</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The id_token can be provided either in JSON format or as a signed JWT (configurable     on the CONNECT side according to the client application requirements) and includes basic user     profile data that allows the authentication of a user on the client application.</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="concept_sgy_khz_gwb-d1107e1347" class="topicref" data-id="concept_sgy_khz_gwb" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action concept_sgy_khz_gwb-d1107e1347-link" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_automatic-login.html" id="concept_sgy_khz_gwb-d1107e1347-link">Automatic Login</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The user authentication status on CONNECT can be checked by an application by issuing         a "silent" authorization request. </p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="concept_jtt_zt2_hwb-d1107e1386" class="topicref" data-id="concept_jtt_zt2_hwb" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action concept_jtt_zt2_hwb-d1107e1386-link" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_user-data-retrieve.html" id="concept_jtt_zt2_hwb-d1107e1386-link">Retrieving User Data</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Some applications not only need to sign the user in, but also access a web service on         behalf of that user using OAuth. An example of this is a service that provides additional         user data than those included in the id_token.</p></span></span></span></li><li role="treeitem" class="active"><span data-tocid="reference_jfs_frm_hwb-d1107e1577" class="topicref" data-id="reference_jfs_frm_hwb" data-state="leaf"><span role="button" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/r_con_openid-scopes.html" id="reference_jfs_frm_hwb-d1107e1577-link">Scopes</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="concept_ipd_vwm_hwb-d1107e1597" class="topicref" data-id="concept_ipd_vwm_hwb" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action concept_ipd_vwm_hwb-d1107e1597-link" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_logout.html" id="concept_ipd_vwm_hwb-d1107e1597-link">Logout</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="concept_u3k_cbn_hwb-d1107e1652" class="topicref" data-id="concept_u3k_cbn_hwb" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action concept_u3k_cbn_hwb-d1107e1652-link" class="wh-expand-btn" aria-hidden="true"></span><span class="title"><a href="../openID/c_con_openid_back-channels-api.html" id="concept_u3k_cbn_hwb-d1107e1652-link">Back Channels APIs</a></span></span></li></ul></li></ul></div>
+                        </nav>
+                        
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Scopes</h1>
+    
+    <div class="- topic/body reference/refbody body refbody"><p class="- topic/shortdesc shortdesc"></p>
+        <div class="simpletable-container"><table class="- topic/simpletable simpletable frame-all" id="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv" data-ofbid="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv"><colgroup><col style="width:25.96401028277635%"/><col style="width:48.329048843187664%"/><col style="width:25.706940874035993%"/></colgroup><thead><tr class="- topic/sthead sthead">
+                <th class="- topic/stentry stentry" scope="col" id="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__1">Scope Name</th>
+                <th class="- topic/stentry stentry" scope="col" id="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__2">Sample Data</th>
+                <th class="- topic/stentry stentry" scope="col" id="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__3">Use</th>
+            </tr></thead><tbody><tr class="- topic/strow strow">
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__1">openid</td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__2">id_token</td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__3">User authentication</td>
+            </tr><tr class="- topic/strow strow">
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__1">oauth2_tokens</td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__2">
+                    <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>"oauth": [ 
+    { 
+      "access_token": "ya29.a0AfH6S” 
+      "provider": "google", 
+      "subject": "104241676902092822009", 
+      "created": 1602574579, 
+      "name": "Google", 
+      "expiry": 3524, 
+      "scopes": "https://www.googleapis.com/auth/userinfo.profile,
+        https://www.googleapis.com/auth/userinfo.email,openid", 
+      "type": "oauth2" 
+    } 
+  ]</code></pre>
+                </td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__3">Array of OAuth access tokens for the 3rd party identities associated with
+                    the profile of the user. </td>
+            </tr><tr class="- topic/strow strow">
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__1">affiliations</td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__2">
+                    <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>"affiliations": [ 
+    { 
+      "created": 1597073676, 
+      "description": "Demo College", 
+      "type": "EMAIL", 
+      "value": "<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0d6861646c7e23666b7e653f4d606c646164636c79627f236e6260">[email&#160;protected]</a>", 
+      "remaining": 2274768 
+    }, 
+
+    { 
+      "created": 1600794812, 
+      "description": "Newcastle University", 
+      "type": "IP", 
+      "value": "128.240.10.10", 
+      "remaining": 5995904 
+    } 
+  ] </code></pre>
+                </td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__3">An array of the user’s verified institutional memberships.</td>
+            </tr><tr class="- topic/strow strow">
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__1">login_method</td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__2">
+                    <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>"login_method": "google"</code></pre>
+                </td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__3">
+                    <p class="- topic/p p">The method used to log in .</p>
+                    <p class="- topic/p p">The possible values are: </p>
+                    <ul class="- topic/ul ul" id="reference_jfs_frm_hwb__ul_nln_1wm_hwb" data-ofbid="reference_jfs_frm_hwb__ul_nln_1wm_hwb">
+                        <li class="- topic/li li">google</li>
+                        <li class="- topic/li li">apple</li>
+                        <li class="- topic/li li">orcid</li>
+                        <li class="- topic/li li">password</li>
+                        <li class="- topic/li li">code</li>
+                    </ul>
+                </td>
+            </tr><tr class="- topic/strow strow">
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__1">settings</td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__2">
+                    <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>"settings": { 
+    "logActivity": true, 
+    "affiliationsEnabled": true, 
+    "ipRecordingEnabled": true, 
+    "marketable": true, 
+    "marketableEmail":"<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="79131d161c391c01181409151c571a1614">[email&#160;protected]</a>", 
+    "searchable": true, 
+    "demographicShared": true 
+  }, </code></pre>
+                </td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__3">The user's CONNECT profile settings.</td>
+            </tr><tr class="- topic/strow strow">
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__1">token_introspection</td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__2">n/a</td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__3">The ability to introspect tokens at /api/introspection</td>
+            </tr><tr class="- topic/strow strow">
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__1">identity_roles</td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__2">
+                    <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>"roles": [ 
+    { 
+      "code": "Super Admin", 
+      "name": "Super Admin", 
+      "space": { 
+        "code": "app", 
+        "name": "Application Name" 
+      } 
+   ] </code></pre>
+                </td>
+                <td class="- topic/stentry stentry" headers="reference_jfs_frm_hwb__simpletable_zv3_w5q_kv__stentry__3">The user roles.</td>
+            </tr></tbody></table></div>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div class=" footer-container mx-auto ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8c7ddb1cff34ac3c","serverTiming":{"name":{"cfExtPri":true,"cfL4":true}},"version":"2024.8.0","token":"3cedb97f3edc459784b9d359b9d5bfce"}' crossorigin="anonymous"></script>
+</body>
+</html>
